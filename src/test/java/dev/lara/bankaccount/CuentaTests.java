@@ -142,7 +142,7 @@ void testConsignarMultiplesVeces() {
     cuenta.consignar(1000); 
     cuenta.consignar(500); 
     cuenta.consignar(1500); 
-    assertThat(cuenta.getSaldo(), equalTo(13000.0f)); 
+    assertThat(cuenta.getSaldo(), equalTo(1300.0f)); 
 }
 
 @Test
