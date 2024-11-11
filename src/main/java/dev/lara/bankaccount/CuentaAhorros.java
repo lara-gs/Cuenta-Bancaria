@@ -43,4 +43,12 @@ public class CuentaAhorros extends Cuenta {
         return super.imprimirDetallesCuenta() + "\nActiva: " + activa;
     }
 
+    public boolean isActiva() {
+        return activa;
+    }
+
+    public void setActiva(boolean activa) {
+        this.activa = activa;
+    }
+
 }

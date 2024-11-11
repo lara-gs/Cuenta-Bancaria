@@ -20,12 +20,9 @@ public class Cuenta {
     }
 
     public void retirar(float balance) {
-        if (balance > 0) {
-            if (balance <= balance) {
-                saldo -= balance;
-                numRetiros++;
-
-            }
+        if (balance > 0 && saldo >= balance) {
+            saldo -= balance;
+            numRetiros++;
 
         }
     }
@@ -52,5 +49,41 @@ public class Cuenta {
                 "Número de retiros: " + numRetiros + "\n" +
                 "Comisión mensual: " + comisionMensual + "\n" +
                 "Tasa anual: " + tasaAnual + "%\n";
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public int getNumConsignaciones() {
+        return numConsignaciones;
+    }
+
+    public void setNumConsignaciones(int numConsignaciones) {
+        this.numConsignaciones = numConsignaciones;
+    }
+
+    public int getNumRetiros() {
+        return numRetiros;
+    }
+
+    public void setNumRetiros(int numRetiros) {
+        this.numRetiros = numRetiros;
+    }
+
+    public float getTasaAnual() {
+        return tasaAnual;
+    }
+
+    public void setTasaAnual(float tasaAnual) {
+        this.tasaAnual = tasaAnual;
+    }
+
+    public float getComisionMensual() {
+        return comisionMensual;
+    }
+
+    public void setComisionMensual(float comisionMensual) {
+        this.comisionMensual = comisionMensual;
     }
 }

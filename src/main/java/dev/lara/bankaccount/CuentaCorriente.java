@@ -28,4 +28,12 @@ public class CuentaCorriente extends Cuenta {
     public String imprimirDetallesCuenta(){
         return super.imprimirDetallesCuenta() + "\nSobregiro: " + sobregiro;
     }
+
+    public float getSobregiro() {
+        return sobregiro;
+    }
+
+    public void setSobregiro(float sobregiro) {
+        this.sobregiro = sobregiro;
+    }
 }
